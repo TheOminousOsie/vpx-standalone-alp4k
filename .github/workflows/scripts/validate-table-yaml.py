@@ -263,7 +263,7 @@ def is_md5_hash(hash_string):
     """
     return bool(re.match(r"^[a-f0-9]{32}$", hash_string))
 
-def checkYmlFile(yml_file)
+def checkYmlFile(yml_file):
 
     with open(yml_file, "r") as table_data:
         table_yaml = yaml.safe_load(table_data)
