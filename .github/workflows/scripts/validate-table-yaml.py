@@ -263,6 +263,31 @@ def is_md5_hash(hash_string):
     """
     return bool(re.match(r"^[a-f0-9]{32}$", hash_string))
 
+def checkYmlFile(yml_file)
+
+    with open(yml_file, "r") as table_data:
+        table_yaml = yaml.safe_load(table_data)
+
+    path = Path(yml_file)
+    folder_name = path.parent.name
+    print(f"Processing {folder_name}")
+
+    # Perform checks on the YAML file
+    check_overrides(table_yaml)
+
+    # Perform checks on the rendered metadata
+    meta = vpsdb.get_table_meta([yml_file], warn_on_error=False)
+
+    check_bundled(meta)
+    check_checksums(meta)
+    check_fixes(meta)
+    check_fps(meta)
+    check_testers(meta)
+
+    j = json.dumps(meta, indent=4)
+    print(j)
+    sys.exit(0)
+
 
 if __name__ == "__main__":
     yml_file = sys.argv[1]

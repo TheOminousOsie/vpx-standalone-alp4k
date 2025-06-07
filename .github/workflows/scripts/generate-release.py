@@ -117,7 +117,12 @@ if __name__ == "__main__":
         print("Error: Required environment variables not set.")
         exit(1)
 
+    validate_module = __import__("validate-table-yaml")
+
     files = find_table_yml()
+    
+    for yml_file in files:
+        validate_module.checkYmlFile(yml_file)
 
     tables = vpsdb.get_table_meta(files)
     
