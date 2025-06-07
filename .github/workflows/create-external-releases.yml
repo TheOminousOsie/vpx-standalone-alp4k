@@ -24,6 +24,25 @@ jobs:
           python -m pip install --upgrade pip
           pip install pygithub requests pyyaml GitPython
 
+      - name: Get changed table.yml files
+        id: changed-files
+        run: |
+          CHANGED_FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }} | grep -w 'table\.yml$')
+          echo "CHANGED_FILES=$(echo "$CHANGED_FILES" | tr '\n' ',')" >> $GITHUB_OUTPUT
+  
+      - name: Validate table.yml files
+        run: |
+          if [[ -n "${{ steps.changed-files.outputs.CHANGED_FILES }}" ]]; then
+            IFS=',' read -ra FILES <<< "${{ steps.changed-files.outputs.CHANGED_FILES }}"
+            for file in "${FILES[@]}"; do
+              echo "Checking \"$file\""
+              python .github/workflows/scripts/validate-table-yaml.py "$file"
+              yamllint -c .yamllint "$file"
+            done
+          else
+            echo "No table.yml files were changed."
+          fi
+
       - name: Generate release files
         run: python .github/workflows/scripts/generate-release.py
         env:
