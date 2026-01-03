@@ -219,6 +219,7 @@ Links to these products on Amazon are through affiliate links.
 | [Scared Stiff (Bally 1996)](external/vpx-scaredstiff) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x: | 50 |
 | [Seawitch, JP's (Stern 1980)](external/vpx-seawitch) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x: | 60 |
 | [Secret Service (Data East 1988)](external/vpx-secretservice) | :white_check_mark: | :x: | :white_check_mark: | :x: | 60 |
+| [Shadow, The (Bally 1994)](external/vpx-theshadow) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x: | 60 |
 | [Shark (Taito do Brasil 1982)](external/vpx-shark) | :white_check_mark: | :x: | :white_check_mark: | :x: | 60 |
 | [Simpsons Pinball Party, The (Stern 2003)](external/vpx-simpsonspprty) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x: | 50 |
 | [Skyscraper (Bally 1934)](external/vpx-skyscraper) | :white_check_mark: | :x: | :x: | :x: | 60 |
@@ -653,7 +654,6 @@ Links to these products on Amazon are through affiliate links.
 | [Senna Prototype Edition (Culik Pinball 2020)](external/vpx-senna) | :white_check_mark: | :x: | :x: | :x: | 60 |
 | [Serious Sam (Original 2017)](external/vpx-ssam) | :white_check_mark: | :white_check_mark: | :x: | :x: | 53 |
 | [Sesame Street (Original 2021)](external/vpx-sesamestreet) | :white_check_mark: | :x: | :white_check_mark: | :x: | 50 |
-| [Shadow, The (Bally 1994)](external/vpx-theshadow) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x: | 52 |
 | [Shaq Attaq (Gottlieb 1995)](external/vpx-shaq) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x: | 35 |
 | [Sharkey's Shootout (Stern 2000)](external/vpx-shrkysht) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x: | 45 |
 | [Shooting The Rapids (Zaccaria 1979)](external/vpx-shootingtherapids) | :white_check_mark: | :x: | :white_check_mark: | :x: | 60 |
